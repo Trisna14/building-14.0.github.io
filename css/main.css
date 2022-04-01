@@ -1,0 +1,27 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+/* font-family: 'Nunito Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/* font-family: 'Lato', sans-serif; */
+
+@import url('nav/nav.css');
+
+* {
+    /* border: 1px solid black; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+ 
+    /* background-repeat: no-repeat; */
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.144), #f1eeee0f);
+}

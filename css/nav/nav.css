@@ -1,0 +1,222 @@
+/* * {
+    border: 1px solid black;
+} */
+
+nav.main-head {
+    /* height: 55px; */
+    position: relative;
+    border-bottom: 1px solid gainsboro;
+    text-align: right;
+    box-shadow: 4px 4px 4px rgba(57, 56, 56, 0.309);
+    background-color: white;
+    /* padding: 6px 0; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 65px;
+    flex-wrap: wrap;
+}
+
+nav.main-head .announ {
+    border-right: 1px solid gainsboro;
+    height: 100%;
+    margin-right: 14px;
+    /* height: auto; */
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+nav.main-head .announ a {
+    margin-right: 24px;
+    font-size: 14px;
+    color: rgb(222, 219, 219);
+    position: relative;
+}
+
+nav.main-head .announ a .num {
+    position: absolute;
+    top: -14px;
+    left: -6px;
+    color:  rgb(243, 238, 238);
+    font-size: 9px;
+    padding: 2px 4px;
+    background-color: red;
+    border-radius: 4px;
+}
+
+/* ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' */
+nav.main-head .circle-profil {
+    /* display: inline-block; */
+    /* border: 1px solid red; */
+    padding: 8px 22px;
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+
+nav.main-head .circle-profil .circle-name {
+    display: inline-block;
+    /* border: 1px solid red; */
+    height: 40px;
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+nav.main-head .circle-profil .circle-name a {
+    color: rgba(90, 89, 89, 0.781);
+    font-weight: lighter;
+}
+
+nav.main-head .circle-profil .circle-img {
+    border: 1px dashed rgb(133, 133, 133);
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+nav.main-head .circle-profil .circle-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    display: none;
+}
+
+nav.main-head .circle-profil .circle-img .mark {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav.main-head .circle-profil .circle-img .mark p {
+    display: inline-block;
+    color: gainsboro;
+}
+
+nav.main-head .circle-profil .circle-window {
+    position: absolute;
+    width: 170px;
+    /* height: 200px; */
+    /* bottom: -30px; */
+    top: 65px;
+    /* left: -4px; */
+    border: 1px solid rgba(220, 220, 220, 0.592);
+    background-color: white;
+    border-radius: 6px;
+    /* box-shadow: 4px 2px 2px gainsboro; */
+    z-index: 10;
+    font-weight: lighter;
+    display: none;
+}
+
+nav.main-head .circle-profil .show-circle-window {
+    display: block;
+}
+
+nav.main-head .circle-profil .circle-window .top {
+    padding: 19px;
+    /* text-align: center; */
+}
+
+nav.main-head .circle-profil .circle-window .top .menu {
+    font-size: 14px;
+    text-transform: capitalize;
+    /* letter-spacing: 1px; */
+    display: block;
+    margin: 16px 0px;
+    text-align: left;
+}
+
+nav.main-head .circle-profil .circle-window .top .menu:nth-child(1) {
+    margin-top: 0;
+}
+
+nav.main-head .circle-profil .circle-window .top .menu:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+nav.main-head .circle-profil .circle-window .top .menu a {
+    color: rgb(158, 155, 155);
+}
+
+nav.main-head .circle-profil .circle-window .top .menu a:hover {
+    color: gray;
+}
+
+nav.main-head .circle-profil .circle-window .bottom {
+    border-top: 1px solid gainsboro;
+}
+
+nav.main-head .circle-profil .circle-window .bottom .log {
+    padding: 19px;
+    /* text-align: center; */
+    text-align: left;
+    display: block;
+    font-size: 14px;
+    /* letter-spacing: 1px; */
+}
+
+nav.main-head .circle-profil .circle-window .bottom .log a {
+    text-transform: capitalize;
+    color: rgb(141, 139, 139);
+}
+
+nav.main-head .circle-profil .circle-window .bottom .log a:hover {
+    color: gray;
+}
+
+/* ''''''''''''''''''''''''''''''''''''''''''''''' */
+nav.main-head .main-knobnav {
+    /* display: flex; */
+    /* border: 1px solid red; */
+    margin: 0 30px 0 10px;
+    display: none;
+}
+
+nav.main-head .main-knobnav .knob-nav {
+    font-size: 24px;
+    color: rgb(126, 122, 122);
+    cursor: pointer;
+}
+
+
+
+nav.main-menu {
+    min-height: 100vh;
+    width: 250px;
+    position: fixed;
+    /* background-color: rgb(31, 98, 233); */
+    background-color: #4e73df;
+    z-index: 100;
+    top: 0;
+    box-shadow: 4px 0px 4px rgba(144, 142, 142, 0.44);
+    /* border-right: 10px solid rgb(65, 157, 238); */
+    /* display: none; */
+}
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+   
+    nav.main-head .main-knobnav {
+        display: block;
+    }
+
+  }
