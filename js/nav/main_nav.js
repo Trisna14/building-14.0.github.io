@@ -15,3 +15,15 @@ export function circle_window () {
         });
     });
 }
+
+export function knob_nav () {
+
+    const knob = document.getElementsByClassName('knob-nav')[0];
+    const nav = document.getElementsByClassName('main-menu')[0];
+
+    knob.addEventListener ('click', () => {
+
+        console.log(nav);
+        nav.classList.toggle('show-nav');
+    });
+}

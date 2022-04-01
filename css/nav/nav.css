@@ -219,4 +219,14 @@ nav.main-menu {
         display: block;
     }
 
+    /* '''''''''''''''''''''''''''''''''''''''''''' */
+    nav.main-menu {
+        transform: translateX(-100%);
+        transition: 0.6s all;
+    }
+
+    nav.show-nav {
+        transform: translateX(0);
+    }
+
   }
