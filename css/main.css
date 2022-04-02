@@ -9,6 +9,7 @@
 /* font-family: 'Ubuntu', sans-serif; */
 
 @import url('nav/nav.css');
+@import url('main_wrapper/main_wrapper.css');
 
 * {
     /* border: 1px solid black; */

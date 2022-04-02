@@ -4,7 +4,9 @@
 
 nav.main-head {
     /* height: 55px; */
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
     border-bottom: 1px solid gainsboro;
     text-align: right;
     box-shadow: 4px 4px 4px rgba(24, 105, 220, 0.115);
@@ -15,6 +17,7 @@ nav.main-head {
     align-items: center;
     height: 70px;
     flex-wrap: wrap;
+    z-index: 50;
 }
 
 nav.main-head .announ {
@@ -118,7 +121,7 @@ nav.main-head .circle-profil .circle-window {
     background-color: white;
     border-radius: 6px;
     /* box-shadow: 4px 2px 2px gainsboro; */
-    z-index: 10;
+    z-index: 100;
     font-weight: lighter;
     display: none;
     letter-spacing: 1px;
@@ -126,6 +129,10 @@ nav.main-head .circle-profil .circle-window {
 
 nav.main-head .circle-profil .show-circle-window {
     display: block;
+    /* z-index: 100; */
+    /* border: 1px solid red; */
+    position: absolute;
+    z-index: 100;
 }
 
 nav.main-head .circle-profil .circle-window .top {
@@ -200,7 +207,8 @@ nav.main-head .main-knobnav .knob-nav {
 nav.main-nav {
     min-height: 100%;
     width: 250px;
-    position: absolute;
+    position: relative;
+    /* top: -100px; */
     /* background-color: rgb(31, 98, 233); */
     background-color: #4e73df;
     z-index: 100;
@@ -240,7 +248,8 @@ nav.main-nav .nav-body ul li {
 }
 
 nav.main-nav .nav-body .menu-nav {
-    padding-bottom: 8px;
+    padding-bottom: 16px;
+    margin-top: 12px;
     border-bottom: 1px solid rgba(245, 245, 245, 0.427);
 }
 
@@ -330,6 +339,7 @@ nav.main-nav .nav-body ul li a i {
 
     nav.main-nav {
         width: auto;
+        
     }
 
     nav.main-nav .nav-head .headtitle {
@@ -373,6 +383,8 @@ nav.main-nav .nav-body ul li a i {
         transition: 0.6s all;
         width: auto;
         padding: 12px;
+        position: fixed;
+        position: absolute;
     }
 
     nav.show-nav {
