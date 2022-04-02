@@ -197,7 +197,7 @@ nav.main-head .main-knobnav .knob-nav {
 
 
 /* ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' */
-nav.main-menu {
+nav.main-nav {
     min-height: 100vh;
     width: 250px;
     position: fixed;
@@ -211,24 +211,72 @@ nav.main-menu {
     padding: 10px;
 }
 
-nav.main-menu .nav-head {
+nav.main-nav .nav-head {
     text-align: center;
     padding: 15px 0 20px 0;
     border-bottom: 1px solid rgba(245, 245, 245, 0.438);
 }
 
-nav.main-menu .nav-head .headtitle {
+nav.main-nav .nav-head .headtitle {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 19px;
+    letter-spacing: 1px;
     
 }
 
-nav.main-menu .nav-head .headtitle a {
+nav.main-nav .nav-head .headtitle a {
     color: white;
 }
 
+/* nav body */
+nav.main-nav .nav-body ul li {
+    padding: 19px 19px 19px 5px;
+    font-size: 16px;
+    text-transform: capitalize;
+    border-bottom: 1px solid rgba(245, 245, 245, 0.403);
+    font-weight: 400;
+}
+
+nav.main-nav .nav-body ul li a {
+    color: white;
+}
+
+nav.main-nav .nav-body ul li a i {
+    margin-right: 6px;
+}
+
+
+
+
+
+@media only screen and (max-width: 1200px) and (min-width: 600px) { 
+
+    nav.main-nav {
+        width: auto;
+    }
+
+    nav.main-nav .nav-head .headtitle {
+        font-size: 12px;
+    }
+
+
+    /* '''''''''''''''''''''''''''''''''''''''''''' */
+    /* nav body */
+    nav.main-nav .nav-body ul li {
+        text-align: center;
+        font-size: 12px;
+        padding: 8px 4px;
+    }
+
+    nav.main-nav .nav-body ul li a i {
+        display: block;
+        margin-bottom: 4px;
+        font-size: 28px;
+    }
+
+} 
 
 
 
@@ -241,7 +289,7 @@ nav.main-menu .nav-head .headtitle a {
     }
 
     /* '''''''''''''''''''''''''''''''''''''''''''' */
-    nav.main-menu {
+    nav.main-nav {
         transform: translateX(-100%);
         transition: 0.6s all;
     }
@@ -249,5 +297,6 @@ nav.main-menu .nav-head .headtitle a {
     nav.show-nav {
         transform: translateX(0);
     }
+
 
   }

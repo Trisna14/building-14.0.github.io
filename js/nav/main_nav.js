@@ -19,7 +19,7 @@ export function circle_window () {
 export function knob_nav () {
 
     const knob = document.getElementsByClassName('knob-nav')[0];
-    const nav = document.getElementsByClassName('main-menu')[0];
+    const nav = document.getElementsByClassName('main-nav')[0];
 
     knob.addEventListener ('click', () => {
 
