@@ -27,3 +27,22 @@ export function knob_nav () {
         nav.classList.toggle('show-nav');
     });
 }
+
+// knob window nav menu
+export function knob_menuNav () {
+
+    const knobs = document.querySelectorAll('.light-menu');
+    
+    knobs.forEach (function (knob) {
+
+        knob.addEventListener ('click', function (element) {
+
+            // console.log(knob.children[0].childNodes[2].classList.toggle('rotate'));
+            knob.children[0].childNodes[2].classList.toggle('rotate')
+            // console.log(knob.children[0].childNodes[2].classList);
+
+            console.log(knob.children[1].classList.toggle('show-window-menu'));
+
+        });
+    });
+}

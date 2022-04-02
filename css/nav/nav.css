@@ -66,7 +66,7 @@ nav.main-head .circle-profil .circle-name {
     justify-content: center;
     align-items: center;
     margin-right: 8px;
-    font-style: italic;
+    /* font-style: italic; */
     cursor: pointer;
 }
 
@@ -198,9 +198,9 @@ nav.main-head .main-knobnav .knob-nav {
 
 /* ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' */
 nav.main-nav {
-    min-height: 100vh;
+    min-height: 100%;
     width: 250px;
-    position: fixed;
+    position: absolute;
     /* background-color: rgb(31, 98, 233); */
     background-color: #4e73df;
     z-index: 100;
@@ -233,10 +233,77 @@ nav.main-nav .nav-head .headtitle a {
 /* nav body */
 nav.main-nav .nav-body ul li {
     padding: 19px 19px 19px 5px;
-    font-size: 16px;
+    font-size: 18px;
     text-transform: capitalize;
-    border-bottom: 1px solid rgba(245, 245, 245, 0.403);
+    /* border-bottom: 1px solid rgba(245, 245, 245, 0.403); */
     font-weight: 400;
+}
+
+nav.main-nav .nav-body .menu-nav {
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(245, 245, 245, 0.427);
+}
+
+nav.main-nav .nav-body .menu-nav .title-menu {
+    text-transform: uppercase;
+    display: block;
+    padding: 14px;
+    font-size: 12px;
+    color: rgba(220, 220, 220, 0.669);
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+}
+
+nav.main-nav .nav-body .menu-nav .light-menu {
+    margin-bottom: 16px;
+    /* padding-top: 8px; */
+    /* padding-bottom: 14px; */
+    padding: 0 14px;
+    font-size: 14px;
+    position: relative;
+    cursor: pointer;
+    /* opacity: 0; */
+}
+
+nav.main-nav .nav-body .menu-nav .light-menu a {
+    font-weight: lighter !important;
+    color: rgba(220, 220, 220, 0.959);
+    /* text-transform: lowercase; */
+    /* border: 1px solid white; */
+    display: block;
+    position: relative;
+}
+
+nav.main-nav .nav-body .menu-nav .light-menu a:hover {
+    color: white;
+}
+
+nav.main-nav .nav-body .menu-nav .light-menu a i.mark-menu {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    /* transform: rotate(55deg); */
+    transition: 0.4s all;
+}
+
+nav.main-nav .nav-body .menu-nav .light-menu a i.rotate {
+     transform: rotate(55deg);
+}
+
+nav.main-nav .nav-body .menu-nav .light-menu .window-menu {
+    min-height: 1px;
+    background-color: white;
+    margin-top: 12px;
+    /* display: none; */
+    transition: 0.8s all;
+    opacity: 0;
+}
+
+nav.main-nav .nav-body .menu-nav .light-menu .show-window-menu {
+    display: block;
+    /* transition: 0.9s; */
+    min-height: 200px;
+    opacity: 1;
 }
 
 nav.main-nav .nav-body ul li a {
@@ -276,6 +343,10 @@ nav.main-nav .nav-body ul li a i {
         font-size: 28px;
     }
 
+    nav.main-nav .nav-body .menu-nav .light-menu a i.mark-menu {
+        display: none;
+    }
+
 } 
 
 
@@ -292,11 +363,34 @@ nav.main-nav .nav-body ul li a i {
     nav.main-nav {
         transform: translateX(-100%);
         transition: 0.6s all;
+        width: auto;
+        padding: 12px;
     }
 
     nav.show-nav {
         transform: translateX(0);
     }
 
+    nav.main-nav .nav-head .headtitle {
+        font-size: 14px;
+    }
+
+
+     /* nav body */
+     nav.main-nav .nav-body ul li {
+        text-align: center;
+        font-size: 12px;
+        padding: 8px 4px;
+    }
+
+    nav.main-nav .nav-body ul li a i {
+        display: block;
+        margin-bottom: 4px;
+        font-size: 28px;
+    }
+
+    nav.main-nav .nav-body .menu-nav .light-menu a i.mark-menu {
+        display: none;
+    }
 
   }
