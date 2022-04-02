@@ -31,17 +31,15 @@ export function knob_nav () {
 // knob window nav menu
 export function knob_menuNav () {
 
-    const knobs = document.querySelectorAll('.light-menu');
+    const knobs = document.querySelectorAll('.knob-window-menu');
     
     knobs.forEach (function (knob) {
 
-        knob.addEventListener ('click', function (element) {
+        knob.addEventListener ('click', function () {
 
-            // console.log(knob.children[0].childNodes[2].classList.toggle('rotate'));
-            knob.children[0].childNodes[2].classList.toggle('rotate')
-            // console.log(knob.children[0].childNodes[2].classList);
-
-            console.log(knob.children[1].classList.toggle('show-window-menu'));
+            knob.childNodes[2].classList.toggle('rotate')
+            knob.parentElement.childNodes[2].classList.toggle('show-window-menu');
+            knob.classList.toggle('bold');
 
         });
     });

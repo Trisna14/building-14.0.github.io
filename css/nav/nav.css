@@ -263,6 +263,7 @@ nav.main-nav .nav-body .menu-nav .light-menu {
     position: relative;
     cursor: pointer;
     /* opacity: 0; */
+    /* border: 1px solid white; */
 }
 
 nav.main-nav .nav-body .menu-nav .light-menu a {
@@ -272,6 +273,10 @@ nav.main-nav .nav-body .menu-nav .light-menu a {
     /* border: 1px solid white; */
     display: block;
     position: relative;
+}
+
+nav.main-nav .nav-body .menu-nav .light-menu a.bold {
+    color: white;
 }
 
 nav.main-nav .nav-body .menu-nav .light-menu a:hover {
@@ -297,6 +302,7 @@ nav.main-nav .nav-body .menu-nav .light-menu .window-menu {
     /* display: none; */
     transition: 0.8s all;
     opacity: 0;
+    position: relative;
 }
 
 nav.main-nav .nav-body .menu-nav .light-menu .show-window-menu {
@@ -304,6 +310,8 @@ nav.main-nav .nav-body .menu-nav .light-menu .show-window-menu {
     /* transition: 0.9s; */
     min-height: 200px;
     opacity: 1;
+    /* position: absolute; */
+    /* border: 1px solid white; */
 }
 
 nav.main-nav .nav-body ul li a {
