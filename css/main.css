@@ -3,6 +3,8 @@
 /* font-family: 'Nunito Sans', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 /* font-family: 'Lato', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+/* font-family: 'Nunito', sans-serif; */
 
 @import url('nav/nav.css');
 
@@ -12,16 +14,18 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 a {
     text-decoration: none;
     color: black;
+    display: inline-block;
 }
 
 body {
  
     /* background-repeat: no-repeat; */
     min-height: 100vh;
-    background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.144), #f1eeee0f);
+    background-image: linear-gradient(to bottom, rgba(234, 238, 240, 0.144), #1671f901);
 }
