@@ -5,4 +5,6 @@ if (document.querySelectorAll('.circle-name')[0]) {
 if (document.querySelectorAll('.main-nav')[0]) {
     knob_nav();
 }
-knob_menuNav();
+if (document.querySelectorAll('.light-menu')[0]) {
+    knob_menuNav();
+}
