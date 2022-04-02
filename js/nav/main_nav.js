@@ -44,3 +44,33 @@ export function knob_menuNav () {
         });
     });
 }
+
+// bell
+export function bell () {
+
+    const btn_bells = document.getElementsByClassName('knob-bell');
+    
+    let i;
+    for (i = 0; i < btn_bells.length; i++) {
+
+        btn_bells[i].parentElement.addEventListener ('click', function (e) {
+
+            console.log(e.preventDefault());
+        });
+
+        btn_bells[i].addEventListener ('click', function (e) {
+
+            e.preventDefault();
+
+            const btn_bells_rm = document.getElementsByClassName('knob-bell');
+            for (let n = 0; n < btn_bells_rm.length; n++) {
+
+                // btn_bells_rm[n].nextElementSibling.nextElementSibling.classList.toggle('show-bell-window');
+                // btn_bells_rm[n].nextElementSibling.nextElementSibling.classList.remove('show-bell-window');
+            }
+
+            this.nextElementSibling.nextElementSibling.classList.toggle('show-bell-window');
+            // this.nextElementSibling.nextElementSibling.classList.add('show-bell-window');
+        });
+    }
+}
