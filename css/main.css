@@ -7,9 +7,10 @@
 /* font-family: 'Nunito', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 /* font-family: 'Ubuntu', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+/* font-family: 'Mukta', sans-serif; */
 
-@import url('nav/nav.css');
-@import url('main_wrapper/main_wrapper.css');
+@import url('nav/nav.css'); @import url('main_wrapper/main_wrapper.css'); @import url('authentication/authentication.css');
 
 * {
     /* border: 1px solid black; */
@@ -18,7 +19,8 @@
     box-sizing: border-box;
     /* font-family: 'Lato', sans-serif; */
     /* font-family: 'Nunito', sans-serif; */
-    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Mukta', sans-serif;
 }
 
 a {

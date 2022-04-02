@@ -285,6 +285,7 @@ nav.main-nav .nav-body ul li {
     text-transform: capitalize;
     /* border-bottom: 1px solid rgba(245, 245, 245, 0.403); */
     font-weight: 400;
+    letter-spacing: 1px;
 }
 
 nav.main-nav .nav-body .menu-nav {
@@ -304,7 +305,7 @@ nav.main-nav .nav-body .menu-nav .title-menu {
 }
 
 nav.main-nav .nav-body .menu-nav .light-menu {
-    margin-bottom: 16px;
+    margin-bottom: 4px;
     /* padding-top: 8px; */
     /* padding-bottom: 14px; */
     padding: 0 14px;
