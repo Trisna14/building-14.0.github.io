@@ -22,6 +22,7 @@ body {
     /* padding: 4px; */
     /* justify-content: center; */
     /* align-items: center; */
+    background-color: rgba(0, 0, 0, 0.148);
 
 }
 
@@ -98,7 +99,7 @@ body {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 900px) {
 
     body {
         /* background-color: #ea9c68; */
@@ -111,10 +112,50 @@ body {
     .wrapper-get_started .get_started {
         display: block;
         height: auto;
+        /* border: 1px solid red; */
+        background: none;
+    }
+
+    /* .wrapper-get_started .get_started .log_in {
+        border: 1px solid blue;
+    } */
+
+    .wrapper-get_started .get_started .log_in .data-form {
+        display: block;
+        /* border: 1px solid red; */
+        background: none;
+        /* border: 1px solid red; */
+        margin: 14px;
+        /* box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.423); */
     }
 
     .wrapper-get_started .get_started .log_in .data-form .mark_slash {
         border: 1px solid rgb(162, 156, 156);
         transform: rotate(0deg);
+        display: none;
+    }
+
+    .wrapper-get_started .get_started .log_in .data-form .text-input {
+        border-bottom: 1px solid gainsboro;
+        /* border: 1px solid greenyellow; */
+        width: 100%;
+        margin-bottom: 8px;
+        /* padding: 12px; */
+    }
+
+    .wrapper-get_started .get_started .log_in .data-form .text-input label {
+        background: white;
+    }
+
+    .wrapper-get_started .get_started .log_in .data-form .knob {
+        background-color: rgb(207, 216, 222);
+        border-left: 0;
+        /* color: white; */
+    }
+
+    .wrapper-get_started .get_started .log_in .data-form .knob button {
+        /* color: white; */
+        width: 100%;
+        height: 100%;
     }
 }
