@@ -55,7 +55,20 @@ export function bell () {
 
         btn_bells[i].parentElement.addEventListener ('click', function (e) {
 
-            console.log(e.preventDefault());
+            // console.log(e.preventDefault());
+            e.preventDefault();
+        });
+
+        const wrapper = document.getElementsByClassName('second-wrapper')[0];
+
+        wrapper.addEventListener ('click', () => {
+
+            const btn_bells_clear = document.getElementsByClassName('knob-bell');
+            for (let n = 0; n < btn_bells_clear.length; n++) {
+
+                btn_bells_clear[n].nextElementSibling.nextElementSibling.classList.remove('show-bell-window');
+                // console.log('ok');
+            }
         });
 
         btn_bells[i].addEventListener ('click', function (e) {
